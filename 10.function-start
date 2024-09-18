@@ -1,0 +1,37 @@
+﻿//function/methods in C#
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _9.function
+{
+    internal class Program
+    {
+        static void SayHello()
+        {
+            Console.WriteLine("Hello");
+        }
+        static void Main(string[] args)
+        {
+            SayHello();
+            Console.WriteLine(LargestNum(3,5));
+            Console.ReadKey();
+        }
+        static int LargestNum(int num1,int num2)
+        {
+            int  result;
+            if(num1>num2)
+            {
+                result = num1;
+            }
+            else
+            {
+                result = num2;
+            }
+            return result;
+        }
+    }
+}
